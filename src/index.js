@@ -15,7 +15,7 @@ function generateQuote(event) {
   let apiKey = "7482b6ta250748o436a7585c26ecf30b";
   let prompt = `User instructions: Generate a quote about $(instructionsInput.value)`;
   let context =
-    "You are a quote expert and love to find quotes on User instructions. Your mission is to generate a short and simple quote in basic HTML without backticks. Make sure to base the quote on the user instructions.";
+    "You are a quote expert and love to find quotes on different topics like love, grief, art, joy, and many others. Your mission is to generate a short and simple quote in basic HTML without backticks. Make sure to base the quote on the user instructions.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating quote");
