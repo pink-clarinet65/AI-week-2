@@ -15,19 +15,22 @@
         <h1>AI Week 2 Quote Generator</h1>
       </header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-
-        <div class="quote" id="quote">
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">For Example: Art, Solitude, Courage</div>
+        </div>
+        <div class="quote hidden" id="quote">
           Creativity takes courage." — Henri Matisse
 
           <br />
